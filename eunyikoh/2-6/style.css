@@ -1,0 +1,85 @@
+.body{
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.container{ 
+  position: relative;
+width: 1400px;
+height: 900px;
+}
+
+.BG{
+  
+width: 558px;
+height: 426px;
+background: url('images/BG.png') no-repeat;
+position: absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+
+}
+
+.bag{
+  width:128px;
+  height: 140px;
+  background:url('images/bag.png');
+  position: absolute;
+  top:50%;
+  left:90%;
+}
+
+.Christian-dior{
+  width:136px;
+  height:18px;
+  background:url('images/Christian-dior.png');
+  position: absolute;
+  top:63%;
+  left:30%;
+}
+
+.logo{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width:68px;
+  height:294px;
+  background:url('images/logo.png')
+}
+
+.model-1{
+  position: absolute;
+  top: 38%;
+  left: 39%;
+  width: 149px;
+  height: 317px;
+  background: url('images/model-1.png');
+}
+
+
+.model-2{
+  width:145px;
+  height:311px;
+  background: url('images/model-2.png');
+  position: absolute;
+  top:38%;
+  left:750px;
+}
+
+.shole{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  width: 160px;
+  height: 230px;
+  background: url('assets/shole.png');
+}

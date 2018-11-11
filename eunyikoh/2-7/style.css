@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.BG{
+  width: 1920px;
+  height: 777px;
+  background:url('images/BG.png')
+}
+
+.nexontitle{
+  width: 485px;
+  height: 231px;
+  background: url('images/nexon-title.png')
+}
+
+.planet-left{
+  width:68px;
+  height:71px;
+  background:url('images/planet-left.png')
+}
+.planet-right{
+  width:68px;
+  height:71px;
+  background: url('images/planet-right.png')
+}
+.robot-left{
+  width: 303px;
+  height: 294px;
+  background:url('images/robot-left.png')
+}
+.robot-right{
+  width:303px;
+  height:404px;
+  background: url('images/robot-right.png')
+}
