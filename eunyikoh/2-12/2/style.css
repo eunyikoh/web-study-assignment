@@ -387,7 +387,7 @@ template {
 
 /* Set default font-family. */
 body {
-  color: #EFC638;
+  color: #3c3d48;
   font-family: NanumBarunGothic, sans-serif;
   font-weight: 500;
 }
@@ -436,12 +436,7 @@ body.show-grid::before {
 /**
  * Add a class for hidden contents.
  */
-
-
-
-
-
- .a11y-hidden {
+.a11y-hidden {
   position: absolute;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
@@ -460,77 +455,47 @@ body.show-grid::before {
 .window {
   width: 1100px;
   height: 580px;
-  background-color: #FEE637;
+  background-color: #2f2f2f;
   border-radius: 10px;
 }
 
 .window-head {
   display: flex;
   padding: 12px;
-  border-bottom: 1px solid #EFC637;
+  border-bottom: 1px solid #d0d0d0;
 }
 
 .circle {
   width: 10px;
   height: 10px;
   margin-right: 6px;
-  background-color: #EFC637;
+  background-color: #cdcdcf;
   border-radius: 50%;
 }
 
 .window-body {
   display: flex;
-  flex-direction: column;
-  height: calc(100% - 35px);
+  justify-content: space-between;
   padding: 12px;
 }
 
-.header, .main {
-  background-color: #FFF;
-}
-
-.header {
+.sidebar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  order: 1;
-  padding: 16px;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 290px;
+  height: 520px;
+  padding: 20px;
+  color: #fff;
+  background: url('../assets/dieter-rams-1.jpg') 90% / 800px no-repeat;
 }
 
 .title {
+  margin-bottom: 10px;
   font-size: 26px;
   font-weight: 700;
 }
 
-.navigation-menu-list {
-  display: flex;
-}
-
-.navigation-menu-item {
-  margin-left: 10px;
-}
-
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  margin-bottom: 2px;
-}
-
-.image-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.image-title {
-  order: 1;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.kakaotalk {
-  width: 100px;
-  margin-bottom: 10px;
+.description {
+  font-size: 14px;
 }

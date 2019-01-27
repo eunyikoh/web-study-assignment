@@ -387,7 +387,7 @@ template {
 
 /* Set default font-family. */
 body {
-  color: #EFC638;
+  color: #159687;
   font-family: NanumBarunGothic, sans-serif;
   font-weight: 500;
 }
@@ -436,12 +436,7 @@ body.show-grid::before {
 /**
  * Add a class for hidden contents.
  */
-
-
-
-
-
- .a11y-hidden {
+.a11y-hidden {
   position: absolute;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
@@ -460,21 +455,21 @@ body.show-grid::before {
 .window {
   width: 1100px;
   height: 580px;
-  background-color: #FEE637;
+  background-color: #159687;
   border-radius: 10px;
 }
 
 .window-head {
   display: flex;
   padding: 12px;
-  border-bottom: 1px solid #EFC637;
+  border-bottom: 1px solid #167668;
 }
 
 .circle {
   width: 10px;
   height: 10px;
   margin-right: 6px;
-  background-color: #EFC637;
+  background-color: #167668;
   border-radius: 50%;
 }
 
@@ -485,21 +480,59 @@ body.show-grid::before {
   padding: 12px;
 }
 
-.header, .main {
-  background-color: #FFF;
+.header, .main, .advertisement, .related-links, .footer {
+  background-color: #fff;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  order: 1;
+  margin-bottom: 2px;
   padding: 16px;
 }
 
 .title {
   font-size: 26px;
   font-weight: 700;
+}
+
+.layout {
+  display: flex;
+  flex-grow: 1;
+  margin-bottom: 2px;
+  background-color: #FFF;
+}
+
+.main, .advertisement, .related-links {
+  padding: 20px;
+}
+
+.main {
+  flex-grow: 1;
+  order: 1;
+  margin: 0 2px;
+}
+
+.advertisement {
+  order: 0;
+  flex-basis: 215px;
+}
+
+.related-links {
+  order: 2;
+  flex-basis: 215px;
+}
+
+.paragraph {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
 }
 
 .navigation-menu-list {
@@ -510,27 +543,3 @@ body.show-grid::before {
   margin-left: 10px;
 }
 
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  margin-bottom: 2px;
-}
-
-.image-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.image-title {
-  order: 1;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.kakaotalk {
-  width: 100px;
-  margin-bottom: 10px;
-}

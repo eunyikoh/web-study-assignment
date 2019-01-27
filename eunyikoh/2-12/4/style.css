@@ -387,7 +387,7 @@ template {
 
 /* Set default font-family. */
 body {
-  color: #EFC638;
+  color: #3c3d48;
   font-family: NanumBarunGothic, sans-serif;
   font-weight: 500;
 }
@@ -433,104 +433,3 @@ body.show-grid::before {
 
 /* Reusable classes */
 
-/**
- * Add a class for hidden contents.
- */
-
-
-
-
-
- .a11y-hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.window {
-  width: 1100px;
-  height: 580px;
-  background-color: #FEE637;
-  border-radius: 10px;
-}
-
-.window-head {
-  display: flex;
-  padding: 12px;
-  border-bottom: 1px solid #EFC637;
-}
-
-.circle {
-  width: 10px;
-  height: 10px;
-  margin-right: 6px;
-  background-color: #EFC637;
-  border-radius: 50%;
-}
-
-.window-body {
-  display: flex;
-  flex-direction: column;
-  height: calc(100% - 35px);
-  padding: 12px;
-}
-
-.header, .main {
-  background-color: #FFF;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  order: 1;
-  padding: 16px;
-}
-
-.title {
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.navigation-menu-list {
-  display: flex;
-}
-
-.navigation-menu-item {
-  margin-left: 10px;
-}
-
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  margin-bottom: 2px;
-}
-
-.image-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.image-title {
-  order: 1;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.kakaotalk {
-  width: 100px;
-  margin-bottom: 10px;
-}

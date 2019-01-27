@@ -13,21 +13,43 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="header__title-wrapper">
-        <h1 class="header__title">arbuzz</h1>
-        <div class="header__cs-info">
-          <span>24/7</span>
-          <a href="tel:+037-2339-9874"></a>
+      <div class="header__bg">
+        <div class="header__title-wrapper">
+          <h1 class="header__title">arbuzz</h1>
+          <div class="header__cs-info">
+            <span>24/7</span>
+            <a href="tel:+037-2339-9874">tel:+037-2339-9874</a>
+          </div>
+          <ul class="header__menu">
+            <li><button class="header__language-selection-button" type="button">EN</button></li>
+            <li><button class="header__country-selection-button" type="button">USD</button></li>
+            <li><a class="header__private-link" href="#">Private</a></li>
+            <li><a class="header__login-link" href="#">Login</a></li>
+          </ul>
         </div>
-        <ul class="header__menu">
-          <li><button class="header__language-selection-button" type="button">EN</button></li>
-          <li><button class="header__country-selection-button" type="button">EN</button></li>
-          <li><a class="header__private-link" href="#">Private</a></li>
-          <li><a class="header__login-link" href="#">Private</a></li>
-        </ul>
       </div>
       <!--블럭__엘리먼트--모디파이어-->
-      <nav class="header__navigation"></nav>
+      <nav class="header__navigation">
+        <h2 class="a11y-hidden">Category navigation</h2>
+        <ul class="header__categories">
+          <li class="header__category"><a href="#">MEN</a></li>
+          <li class="header__category"><a href="#">WOMEN</a></li>
+          <li class="header__category"><a href="#">KIDS</a></li>
+          <li class="header__category"><a href="#">COLLECTION</a></li>
+          <li class="header__category"><a href="#">OUTWEAR</a></li>
+          <li class="header__category"><a href="#">SALE</a></li>
+          <li class="header__category"><a href="#">ABOUT</a></li>
+          <li class="header__category"><a href="#">BLOG</a></li>
+          <li class="header__category"><a href="#">SERVICES</a></li>
+          <li class="header__category"><a href="#">CONTACTS</a></li>
+        </ul>    
+      </nav>
+      <div class="header__carousel-wrapper">
+        <h3 class="header__carousel-title">ARBUZZ</h3>
+        <p class="header__carousel-paragraph">Up to 70% off sale</p>
+        <div class="header__carousel-woman"></div>
+      </div>
+      <!--section,article,nav,? 는 무조건 타이틀-->
     </header>
   </div>
   <script src="main.js"></script>
